@@ -14,12 +14,6 @@ writing code and put the CORS configurations after the demo is ready for product
 
 > Your usecase? [create Pull Request](https://github.com/Rokid/node-http-bypass/compare) to submit :p
 
-### Installation
-
-```sh
-$ npm i node-http-bypass -g
-```
-
 ### Usage
 
 You need to define the following JSON under your working directory:
@@ -42,6 +36,12 @@ the program reads this config file, and do the followings:
 - when the target responds to proxy server finally, we will rewrites the response headers by the field `outgoing`.
   - for the `+s` rule, it inserts the given string to the header.
   - for the `s`(string) rule, it replaces the whole value of the specific header.
+
+### Installation
+
+```sh
+$ npm i node-http-bypass -g
+```
 
 ### License
 
