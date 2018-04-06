@@ -5,12 +5,12 @@ Bypass your HTTP/HTTPS backend service configrablly in an easy way.
 
 ### Use case
 
-Currently we are using this module to debug our new forum website, which is based on discourse API, the CORS-required
-website.
+We use this tool to develop our new forum project without any changes on server-side, which is based on
+the discourse API, the CORS-required website.
 
-CORS sometimes take you in a trap, and block your development flow, right? Now, within node-http-bypass, 
-you could customize anything that you wanna without changes on your service in your workflow, just start
-writing code and put the CORS configurations after the demo is done!
+CORS sometimes take you in a trap, and block your development flow, Yep? With node-http-bypass, 
+you could customize anything that you wanna without changes on your server-side, just start
+writing code and put the CORS configurations after the demo is ready for production!
 
 > Your usecase? [create Pull Request](https://github.com/Rokid/node-http-bypass/compare) to submit :p
 
