@@ -3,7 +3,7 @@ node-http-bypass
 
 Bypass your HTTP/HTTPS backend service configrablly in an easy way.
 
-### Use case
+### Usecase
 
 We use this tool to develop our new forum project without any changes on server-side, which is based on
 the discourse API, the CORS-required website.
