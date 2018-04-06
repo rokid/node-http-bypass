@@ -73,7 +73,7 @@ http.createServer((incomingRequest, outgoingResponse) => {
     proxyResponse.pipe(outgoingResponse, { end: true })
   })
   incomingRequest.pipe(proxyRequest, { end: true })
-}).listen(8888)
+}).listen(port)
 
 console.log(`The ByPass server is listening on http://0.0.0.0:${port} for ${config.targetURL}`)
 
