@@ -33,7 +33,7 @@ the program reads this config file, and do the followings:
 
 - start the proxy server on `listen` as its port.
 - when requesting to proxy server, it do request based on the `targetURL`.
-- when the target responds to proxy server finally, we will rewrites the response headers by the field `outgoing`.
+- when the target responds to proxy server finally, it rewrites the headers by the field `outgoing`.
   - for the `+s` rule, it inserts the given string to the header.
   - for the `s`(string) rule, it replaces the whole value of the specific header.
 
