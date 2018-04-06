@@ -1,0 +1,29 @@
+{
+  "name": "http-bypass",
+  "version": "1.0.0",
+  "description": "Bypass your HTTP/HTTPS backend service configrablly in an easy way",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "bypass": "./index.js",
+    "http-bypass": "./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Rokid/node-http-bypass.git"
+  },
+  "keywords": [
+    "bypass",
+    "nginx",
+    "http",
+    "https"
+  ],
+  "author": "Yazhong Liu <yazhong.liu@rokid.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Rokid/node-http-bypass/issues"
+  },
+  "homepage": "https://github.com/Rokid/node-http-bypass#readme"
+}
