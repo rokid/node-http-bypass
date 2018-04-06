@@ -1,6 +1,6 @@
 {
   "name": "http-bypass",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Bypass your HTTP/HTTPS backend service configrablly in an easy way",
   "main": "index.js",
   "scripts": {
