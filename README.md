@@ -37,6 +37,22 @@ the program reads this config file, and do the followings:
   - for the `+s` rule, it inserts the given string to the header.
   - for the `s`(string) rule, it replaces the whole value of the specific header.
 
+*Wanna an API to integrate?*
+
+Yes, it also provides programming interface for doing what you want. Just like the following:
+
+```js
+const ByPassServer = require('http-bypass').ByPassServer
+const proxy = new ByPassServer({
+  listen: 8000,
+  targetURL: 'https://github.com',
+  outgoing: {},
+})
+proxy.start()
+```
+
+The `config` object structure follows the `.bypassconfig`, so just see [Usage](#usage) for details.
+
 ### Installation
 
 ```sh

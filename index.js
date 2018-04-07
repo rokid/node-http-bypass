@@ -6,7 +6,16 @@ const url = require('url')
 const http = require('http')
 const https = require('https')
 
+/**
+ * @class ByPassServer
+ */
 class ByPassServer {
+  /**
+   * @method constructor
+   * @param {Object} config
+   * @param {Number} config.listen - the proxy port to listen
+   * @param {String} config.targetURL - the target url to bypass from
+   */
   constructor(config) {
     if (!config.targetURL)
       throw new Error('targetURL is required.')
@@ -23,6 +32,11 @@ class ByPassServer {
     else
       throw new Error('invalid protocol, only supports http/https')
   }
+  /**
+   * @method postOutgoingHeaders
+   * @param {Response} the source response from .request
+   * @param {Response} the target response object to write out
+   */
   postOutgoingHeaders(source, target) {
     const headers = this.config.outgoing
     for (let name in headers) {
@@ -39,6 +53,9 @@ class ByPassServer {
       console.log(` ${op}${name}`, target.getHeaders()[name])
     }
   }
+  /**
+   * @method start
+   */
   start() {
     http.createServer((incomingRequest, outgoingResponse) => {
       var options = {
