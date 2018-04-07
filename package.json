@@ -7,8 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-    "bypass": "./index.js",
-    "http-bypass": "./index.js"
+    "bypass": "./bin/bypass.js",
+    "http-bypass": "./bin/bypass.js"
   },
   "repository": {
     "type": "git",
